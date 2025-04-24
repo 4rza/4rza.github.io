@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Social Shapes";
+    src: url("../fonts/Social_Shapes.woff2") format("woff2"),
+    url("../fonts/Social_Shapes.ttf") format("truetype");
+    font-display: swap;
+}
+
+.footer{
+    text-align: center;
+    width: 100%;
+    background-color: #3a83b4;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.footerCont{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerUl{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.footerListItems{
+    width: 50%;
+    margin-bottom: 10px;
+    min-width: 300px;
+    text-align: center;
+}
+
+.footerListItems h4{
+    font-size: clamp( 1.8em, 3vw, 2em);
+    margin-bottom: 20px;
+}
+
+.footerListItems ul{
+    list-style: none;
+}
+
+.footerListItems ul li{
+    font-size: clamp( 1.2em, 3vw, 1.5em);
+}
+
+.footerListItems ul li img{
+    width: 80px;
+    min-width: 50px;
+}
+
+.footerListItems ul li span{
+    font-weight: bold;
+}
+
+.footerSocialList{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+}
+
+.socialLinks{
+    margin: 10px;
+    font-family: "Social Shapes";
+    font-size: clamp( 1.8em, 3vw, 2em);
+}
+
+.socialLinks a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.socialLinks a:hover{
+    color: #aaa;
+}
+
+.copy{
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: clamp( 0.8em, 3vw, 1.2em);
+}
+
+.dev{
+    font-size: clamp( 0.8em, 3vw, 1.2em);
+    margin-bottom: 10px;
+}

@@ -76,7 +76,7 @@ h2{
 
 .sectionOne aside img{
     width: 100%;
-    border-radius: 10%;
+    border-radius: 40px;
 }
 
 .sectionOne section {
@@ -113,7 +113,7 @@ h2{
 
 .sectionTwoCont{
     margin: auto;
-    width: 80vw;
+    width: 80%;
 }
 
 .espesList {
@@ -136,7 +136,6 @@ h2{
     transition: 350ms;
     outline: solid 1px #ccc;
     border-radius: 40px;
-    /**box-shadow: 0 0 15px #0000003d;**/
 }
 
 .BATIN:hover{
@@ -172,44 +171,3 @@ h2{
     padding: 10px;
     font-size: clamp( 1.4em, 3vw, 1.8em);
 }
-
-/**
-
-.sectionThree{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 450px;
-}
-
-.sectionThreeCont{
-    display: flex;
-    margin: auto;
-    flex-direction: row;
-    width: 70vw;
-    min-height: 450px;
-}
-
-.sectionThree aside{
-    margin: auto;
-}
-
-.sectionThree img{
-    border-radius: 50%;
-    padding-top: 40px;
-    aspect-ratio: 1/2;
-    width: 100%;
-}
-
-.sectionThree section{
-    text-align: center;
-    max-width: 80%;
-    margin: auto;
-    padding: 40px;
-}
-
-.sectionThree p{
-    font-size: 1.6em;
-}
-**/

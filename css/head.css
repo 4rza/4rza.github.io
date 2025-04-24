@@ -60,15 +60,12 @@ body {
     font-size: 1.6em;
     color: #000;
     text-decoration: none;
-    transition: border 0.25s;
+    transition: border 0.1s;
 }
 
-.indexLink {
-    border-bottom: solid 3px #52cfc9;
-}
 
 .headerNav ul li a:hover {
-    border-bottom: solid 3px #000;
+    border-bottom: solid 3px #52cfc9;
 }
 
 /* Hamburguesa oculta en pantallas grandes */
