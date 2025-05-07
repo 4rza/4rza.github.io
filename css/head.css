@@ -1,0 +1,197 @@
+body {
+    font-family: sans-serif;
+    font-size: 10px;
+    background-color: #eee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+    z-index: 1000;
+}
+
+.headerContent {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerLogo img {
+    width: 60px;
+    min-width: 40px;
+    height: auto;
+}
+
+.headerLogo p {
+    font-size: clamp( 1.3em, 3.2vw, 1.8em);;
+    font-weight: bold;
+}
+
+.headerNav {
+    display: flex;
+    align-items: center;
+}
+
+.headerNav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.headerNav ul li {
+    list-style: none;
+    position: relative;
+}
+
+.headerNav ul li a,
+.headerNav ul li label {
+    font-size: 1.6em;
+    color: #000;
+    text-decoration: none;
+    transition: 0.25s;
+    text-decoration: underline 0px #00000000;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.headerNav ul li a:hover,
+.headerNav ul li label:hover {
+    text-decoration: underline 3px #3a83b4;
+}
+
+/* Para los enlaces dentro del submenu */
+.submenu a {
+    font-size: 1.4em;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    transition: border 0.25s;
+}
+
+/* Hover para submenu */
+.submenu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* --------- Submenu con checkbox ---------- */
+#submenu-toggle {
+    display: none;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    overflow: hidden;
+    max-height: 0;
+    width: 100%;
+    transition: max-height 0.4s ease;
+    z-index: 999;
+}
+
+.submenu a {
+    padding: 10px;
+    font-size: 1.4em;
+    white-space: nowrap;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Cuando el checkbox está chequeado, se despliega el submenu */
+#submenu-toggle:checked + label + .submenu {
+    max-height: 500px;
+}
+
+/* Hamburguesa oculta en pantallas grandes */
+#menu-toggle,
+.menu-icon {
+    display: none;
+}
+
+/* ----------------------------- */
+/* --- VERSION RESPONSIVE --- */
+/* ----------------------------- */
+@media (max-width: 1000px) {
+    .headerContent {
+        flex-wrap: wrap;
+    }
+
+    .headerNav {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+    }
+
+    .headerNav ul {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .headerNav ul li {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    /* Submenu adaptado a mobile */
+    .submenu {
+        position: static;
+        background-color: #fff;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    /* Mostrar menú hamburguesa */
+    #menu-toggle:checked + .menu-icon + .headerNav {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 25px;
+        position: relative;
+    }
+
+    .menu-icon span {
+        display: block;
+        height: 3px;
+        background-color: #000;
+        margin: 5px 0;
+        transition: 0.3s;
+    }
+
+    #menu-toggle:checked + .menu-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    #menu-toggle:checked + .menu-icon span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked + .menu-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+}

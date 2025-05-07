@@ -1,0 +1,153 @@
+.sectionOne{
+    width: 100%;
+    display: flex;
+    background-color: #ccc;
+}
+
+.sectionOneCont{
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.sectionOneCont aside {
+    margin: auto;
+    width: 50%;
+    min-width: 300px;
+}
+
+.sectionOneCont aside img{
+    width: 100%;
+    border-radius: 40px;
+}
+
+.sectionOneCont section{
+    margin: auto;
+    width: 50%;
+    min-width: 300px;
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+}
+
+h1{
+    font-size: clamp( 3.5em, 6vw, 5em);
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.sectionOneCont section p{
+    font-size: clamp( 1.4em, 3.2vw, 1.8em);
+    margin: auto;
+    text-wrap: pretty;
+}
+
+.sectionTwo{
+    width: 100%;
+    display: flex;
+}
+
+.sectionTwoCont{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: clamp( 3em, 3vw, 5em);
+    text-wrap: pretty;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    text-decoration: underline #3a83b4;
+}
+
+.sectionTwoCont ul{
+    list-style: circle;
+}
+
+.sectionTwoCont ul li{
+    margin-bottom: 20px;
+    margin-left: 60px;
+    font-size: clamp( 1.4em, 3.2vw, 1.8em);
+}
+
+.sectionThree{
+    width: 100%;
+    display: flex;
+}
+
+.sectionThreeCont{
+    width: 80%;
+    margin: auto;
+}
+
+.sectionThreeCont p{
+    font-size: clamp( 1.4em, 3.2vw, 1.8em);
+    border-left: 5px solid #3a83b488;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.sectionFour{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    background-color: #ccc;
+}
+
+.sectionFourCont{
+    width: 80%;
+    margin: auto;
+}
+
+.sectionFourCont ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.sectionFourCont ul li{
+    width: 30%;
+    min-width: 300px;
+}
+
+.sectionFourCont ul li img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 40px;
+}
+
+@media (max-width: 1000px) {
+    .sectionOneCont{
+        width: 100%;
+    }
+
+    h1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .sectionOneCont section{
+        padding-left: 0;
+    }
+
+    .sectionTwoCont ul li{
+        margin-left: 15px;
+    }
+
+    .sectionThreeCont p{
+        border-left: none;
+        padding-left: 0;
+    }
+}
+
