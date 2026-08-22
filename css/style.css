@@ -1,0 +1,190 @@
+/* Reset global */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Header */
+header {
+  background-color: #f8f8f8;
+  z-index: 1000; /* Asegura que quede por encima del contenido al scrollear */
+}
+
+.header {
+  padding: 20px 0; 
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Sección del Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 60px;
+  height: auto;
+  display: block;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  color: #555;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Birthstone", cursive;
+}
+
+.brand-subtitle {
+  color: #555;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 12px;
+  font-family: "Birthstone", cursive;
+}
+
+.slogan {
+  font-style: italic;
+  color: #555;
+  font-family: "Birthstone", cursive;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+/* Menú de Navegación */
+.menu {
+  background-color: #CEB286;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+  font-family: arial;
+  font-weight: bold;
+  padding: 8px 12px;
+  display: block;
+  transition: background-color 0.3s ease;
+  transition: 300ms;
+}
+
+.menu-list a:hover {
+  transform: scale(1.05);
+}
+
+.menu-toggle,
+.hamburger {
+  display: none;
+}
+
+/* Footer sobrepuesto */
+.footer {
+  position: relative;
+  z-index: 2;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+
+/* Responsive (< 1000px) */
+@media (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .slogan {
+    display: none;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .logo-img {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    margin: 5px 0 5px 10%;
+  }
+
+  .hamburger span {
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .menu-list {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .menu-list li {
+    width: 100%;
+  }
+
+  .menu-list a {
+    padding: 12px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-toggle:checked ~ .menu-list {
+    display: flex;
+  }
+}
