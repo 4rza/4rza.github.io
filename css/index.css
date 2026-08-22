@@ -36,7 +36,7 @@
 
 .banner-text {
   text-align: center;
-  color: #fff;
+  color: #f7f2de;
   text-shadow: 1px 1px 10px rgba(0,0,0,1);
   padding: 30px 40px;
   border-radius: 8px;
@@ -55,7 +55,6 @@
 }
 
 .button-cat {
-  /* === AÑADIR ESTA LÍNEA === */
   display: inline-block; 
   padding: 10px 15px;
   font-size: 1.09rem;
