@@ -7,9 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre el catálogo de artesanías de Lopi - Creaciones hechas a mano con amor y dedicación en el taller de Carito.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/productos.css">
-    <title>Lopi</title>
+    <title>Productos | Lopi - Almacén de artesanías</title>
 </head>
 
 <body>
@@ -46,54 +47,223 @@
     <main>
         <section class="productos">
             <h1>Nuestros Productos</h1>
-            <p>Descubre nuestra selección única de artesanías.</p>
+            <p>Descubre nuestra selección única de artesanías hechas a mano con materiales nobles y dedicación.</p>
+            
             <ul class="producto-grid">
-                <li class="producto-item">
-                    <a href="">
-                        <img src="https://i.pinimg.com/736x/98/47/7b/98477bc20524355d17af96a1f932be27.jpg" alt="">
-                        <h3>Nombre del Producto</h3>
-                        <p>Precio: $XX.XX</p>
+                <!-- Producto 1 -->
+                <li class="producto-item" 
+                    tabindex="0"
+                    data-nombre="Producto"
+                    data-precio="Gs. XX.XXX"
+                    data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+                    data-disponible="true"
+                    data-img="https://i.pinimg.com/736x/98/47/7b/98477bc20524355d17af96a1f932be27.jpg">
+                    <a href="#producto-detalle" aria-label="Ver detalles de Producto">
+                        <div class="producto-img-wrapper">
+                            <span class="card-badge disponible">Disponible</span>
+                            <img src="https://i.pinimg.com/736x/98/47/7b/98477bc20524355d17af96a1f932be27.jpg" alt="Producto">
+                            <div class="card-overlay-hint">🔍 Clic para ver detalles</div>
+                        </div>
+                        <div class="producto-info-card">
+                            <div>
+                                <h3>Producto</h3>
+                                <p class="producto-desc-corta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="producto-card-bottom">
+                                <span class="producto-precio">Gs. XX.XXX</span>
+                                <span class="btn-card-accion">Ver más</span>
+                            </div>
+                        </div>
                     </a>
                 </li>
-                <li class="producto-item">
-                    <a href="">
-                        <img src="https://i.pinimg.com/736x/98/47/7b/98477bc20524355d17af96a1f932be27.jpg" alt="">
-                        <h3>Nombre del Producto</h3>
-                        <p>Precio: $XX.XX</p>
+
+                <!-- Producto 2 -->
+                <li class="producto-item" 
+                    tabindex="0"
+                    data-nombre="Producto"
+                    data-precio="Gs. XX.XXX"
+                    data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+                    data-disponible="true"
+                    data-img="https://i.pinimg.com/1200x/54/27/f5/5427f5be85ea53473a412f7d49962808.jpg">
+                    <a href="#producto-detalle" aria-label="Ver detalles de Producto">
+                        <div class="producto-img-wrapper">
+                            <span class="card-badge disponible">Disponible</span>
+                            <img src="https://i.pinimg.com/1200x/54/27/f5/5427f5be85ea53473a412f7d49962808.jpg" alt="Producto">
+                            <div class="card-overlay-hint">🔍 Clic para ver detalles</div>
+                        </div>
+                        <div class="producto-info-card">
+                            <div>
+                                <h3>Producto</h3>
+                                <p class="producto-desc-corta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="producto-card-bottom">
+                                <span class="producto-precio">Gs. XX.XXX</span>
+                                <span class="btn-card-accion">Ver más</span>
+                            </div>
+                        </div>
                     </a>
                 </li>
-                <li class="producto-item">
-                    <a href="">
-                        <img src="https://i.pinimg.com/736x/98/47/7b/98477bc20524355d17af96a1f932be27.jpg" alt="">
-                        <h3>Nombre del Producto</h3>
-                        <p>Precio: $XX.XX</p>
+
+                <!-- Producto 3 -->
+                <li class="producto-item" 
+                    tabindex="0"
+                    data-nombre="Producto"
+                    data-precio="Gs. XX.XXX"
+                    data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+                    data-disponible="false"
+                    data-img="https://i.pinimg.com/1200x/41/34/0f/41340fa37219a6ad2da4f58a97a9a2a9.jpg">
+                    <a href="#producto-detalle" aria-label="Ver detalles de Producto">
+                        <div class="producto-img-wrapper">
+                            <span class="card-badge agotado">No disponible</span>
+                            <img src="https://i.pinimg.com/1200x/41/34/0f/41340fa37219a6ad2da4f58a97a9a2a9.jpg" alt="Producto">
+                            <div class="card-overlay-hint">🔍 Clic para ver detalles</div>
+                        </div>
+                        <div class="producto-info-card">
+                            <div>
+                                <h3>Producto</h3>
+                                <p class="producto-desc-corta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="producto-card-bottom">
+                                <span class="producto-precio">Gs. XX.XXX</span>
+                                <span class="btn-card-accion">Ver más</span>
+                            </div>
+                        </div>
                     </a>
                 </li>
-                <li class="producto-item">
-                    <a href="">
-                        <img src="https://i.pinimg.com/736x/98/47/7b/98477bc20524355d17af96a1f932be27.jpg" alt="">
-                        <h3>Nombre del Producto</h3>
-                        <p>Precio: $XX.XX</p>
+
+                <!-- Producto 4 -->
+                <li class="producto-item" 
+                    tabindex="0"
+                    data-nombre="Producto"
+                    data-precio="Gs. XX.XXX"
+                    data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+                    data-disponible="true"
+                    data-img="https://i.pinimg.com/736x/65/90/96/65909651f9b1d9d612e1c4e51118eed6.jpg">
+                    <a href="#producto-detalle" aria-label="Ver detalles de Producto">
+                        <div class="producto-img-wrapper">
+                            <span class="card-badge disponible">Disponible</span>
+                            <img src="https://i.pinimg.com/736x/65/90/96/65909651f9b1d9d612e1c4e51118eed6.jpg" alt="Producto">
+                            <div class="card-overlay-hint">🔍 Clic para ver detalles</div>
+                        </div>
+                        <div class="producto-info-card">
+                            <div>
+                                <h3>Producto</h3>
+                                <p class="producto-desc-corta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="producto-card-bottom">
+                                <span class="producto-precio">Gs. XX.XXX</span>
+                                <span class="btn-card-accion">Ver más</span>
+                            </div>
+                        </div>
                     </a>
                 </li>
-                <li class="producto-item">
-                    <a href="">
-                        <img src="https://i.pinimg.com/736x/98/47/7b/98477bc20524355d17af96a1f932be27.jpg" alt="">
-                        <h3>Nombre del Producto</h3>
-                        <p>Precio: $XX.XX</p>
+
+                <!-- Producto 5 -->
+                <li class="producto-item" 
+                    tabindex="0"
+                    data-nombre="Producto"
+                    data-precio="Gs. XX.XXX"
+                    data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+                    data-disponible="false"
+                    data-img="https://i.pinimg.com/736x/98/47/7b/98477bc20524355d17af96a1f932be27.jpg">
+                    <a href="#producto-detalle" aria-label="Ver detalles de Producto">
+                        <div class="producto-img-wrapper">
+                            <span class="card-badge agotado">No disponible</span>
+                            <img src="https://i.pinimg.com/736x/98/47/7b/98477bc20524355d17af96a1f932be27.jpg" alt="Producto">
+                            <div class="card-overlay-hint">🔍 Clic para ver detalles</div>
+                        </div>
+                        <div class="producto-info-card">
+                            <div>
+                                <h3>Producto</h3>
+                                <p class="producto-desc-corta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="producto-card-bottom">
+                                <span class="producto-precio">Gs. XX.XXX</span>
+                                <span class="btn-card-accion">Ver más</span>
+                            </div>
+                        </div>
                     </a>
                 </li>
-                <li class="producto-item">
-                    <a href="">
-                        <img src="https://i.pinimg.com/736x/98/47/7b/98477bc20524355d17af96a1f932be27.jpg" alt="">
-                        <h3>Nombre del Producto</h3>
-                        <p>Precio: $XX.XX</p>
+
+                <!-- Producto 6 -->
+                <li class="producto-item" 
+                    tabindex="0"
+                    data-nombre="Producto"
+                    data-precio="Gs. XX.XXX"
+                    data-descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+                    data-disponible="true"
+                    data-img="https://i.pinimg.com/1200x/54/27/f5/5427f5be85ea53473a412f7d49962808.jpg">
+                    <a href="#producto-detalle" aria-label="Ver detalles de Producto">
+                        <div class="producto-img-wrapper">
+                            <span class="card-badge disponible">Disponible</span>
+                            <img src="https://i.pinimg.com/1200x/54/27/f5/5427f5be85ea53473a412f7d49962808.jpg" alt="Producto">
+                            <div class="card-overlay-hint">🔍 Clic para ver detalles</div>
+                        </div>
+                        <div class="producto-info-card">
+                            <div>
+                                <h3>Producto</h3>
+                                <p class="producto-desc-corta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="producto-card-bottom">
+                                <span class="producto-precio">Gs. XX.XXX</span>
+                                <span class="btn-card-accion">Ver más</span>
+                            </div>
+                        </div>
                     </a>
                 </li>
             </ul>
         </section>
     </main>
 
+    <!-- Modal de Detalle de Producto (Pop-up) -->
+    <div id="producto-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+        <div class="modal-card">
+            <button type="button" class="modal-btn-close" id="modal-close-btn" aria-label="Cerrar ventana">&times;</button>
+            
+            <div class="modal-body">
+                <div class="modal-media">
+                    <img id="modal-img" src="" alt="Detalle del producto" class="modal-image">
+                </div>
+                
+                <div class="modal-info">
+                    <div class="modal-header-info">
+                        <span class="modal-tag">Artesanía de Taller</span>
+                        <span id="modal-estado" class="badge-status"></span>
+                    </div>
+                    
+                    <h2 id="modal-titulo" class="modal-title"></h2>
+                    
+                    <div class="modal-precio-wrapper">
+                        <span class="modal-precio-label">Precio:</span>
+                        <span id="modal-precio" class="modal-precio-val"></span>
+                    </div>
+                    
+                    <hr class="modal-divider">
+                    
+                    <div class="modal-descripcion-container">
+                        <h3>Descripción</h3>
+                        <p id="modal-descripcion" class="modal-description"></p>
+                    </div>
+
+                    <div class="modal-caracteristicas">
+                        <div class="modal-chip"><span>✨</span> 100% Hecho a mano</div>
+                        <div class="modal-chip"><span>🌿</span> Materiales naturales</div>
+                        <div class="modal-chip"><span>🤎</span> Taller de Carito</div>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <a id="modal-btn-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="btn-modal-wa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                            </svg>
+                            <span>Consultar por WhatsApp</span>
+                        </a>
+                        <button type="button" class="btn-modal-secondary" id="modal-btn-close-sec">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Botón Flotante de WhatsApp -->
     <a href="https://wa.me/595983006047?text=Hola,%20quisiera%20consultar%20sobre%20sus%20productos"
@@ -103,12 +273,15 @@
                 d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
         </svg>
     </a>
+
     <footer class="footer">
         <div class="footer-content">
             <p>&copy; 2026 Lopi - Almacén de artesanías. Todos los derechos reservados.</p>
         </div>
     </footer>
 
+    <!-- Script de interactividad del modal de productos -->
+    <script src="js/productos.js" defer></script>
 </body>
 
 </html>
