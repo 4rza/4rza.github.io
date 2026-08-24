@@ -81,14 +81,15 @@
   padding: 40px 0;
 }
 
-.historia {
+/* Secciones Generales */
+.seccion {
   width: 80%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 45px auto;
   padding: 0 10px;
 }
 
-.historia h2 {
+.seccion h2 {
   font-size: 1.8rem;
   margin-bottom: 15px;
   color: #000;
@@ -97,8 +98,176 @@
   padding-bottom: 5px;
 }
 
-.historia p {
+.seccion p {
   text-align: justify;
   color: #444;
   margin-bottom: 15px;
+}
+
+.seccion-desc {
+  text-align: left;
+  color: #555;
+}
+
+/* Sección Productos Destacados */
+.destacados-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.destacado-card {
+  flex: 1 1 300px;
+  max-width: 370px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 300ms;
+  margin: 0 auto;
+}
+
+.destacado-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.destacado-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.destacado-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.destacado-info h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.destacado-info p {
+  font-size: 0.95rem;
+  color: #666;
+  text-align: left;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.btn-card {
+  align-self: flex-start;
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  background-color: #CEB286;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 300ms;
+}
+
+.btn-card:hover {
+  background-color: #b89c6f;
+  transform: scale(1.04);
+}
+
+/* Sección Valores / Características */
+.valores-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.valor-item {
+  flex: 1 1 250px;
+  background-color: #fdfdfd;
+  border: 1px solid #f0eae1;
+  border-radius: 8px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: 300ms;
+}
+
+.valor-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.valor-icono {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.valor-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.valor-item p {
+  font-size: 0.95rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* Sección Pedidos Personalizados / CTA */
+.cta-box {
+  background-color: #fcf9f4;
+  border: 2px dashed #CEB286;
+  border-radius: 12px;
+  padding: 35px 25px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.cta-box h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.cta-box p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  color: #555;
+  font-size: 1rem;
+}
+
+.cta-botones {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .destacados-lista,
+  .valores-lista {
+    gap: 18px;
+  }
+
+  .destacado-card,
+  .valor-item {
+    max-width: 100%;
+  }
+
+  .cta-box {
+    padding: 25px 15px;
+  }
 }

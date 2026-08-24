@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="css/index.css">
     <title>Lopi</title>
 </head>
+
 <body>
 
     <header>
@@ -27,7 +29,7 @@
 
     <nav class="menu">
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        
+
         <label for="menu-toggle" class="hamburger">
             <span></span>
             <span></span>
@@ -53,16 +55,106 @@
     </div>
 
     <main class="main-content">
-        <section class="historia">
+        <!-- Sección 1: Historia -->
+        <section class="seccion historia">
             <h2>Nuestra Historia</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ut, expedita nesciunt reiciendis eveniet deserunt blanditiis veritatis minus harum voluptatum quibusdam quam tempora quis debitis eaque possimus illo dignissimos atque alias natus dolor? Amet sapiente eligendi, ratione nulla repellat et consectetur non, placeat ipsum quis explicabo hic? Alias deserunt doloribus animi eligendi vel enim labore nihil! Odio facere fuga libero molestiae, possimus quisquam veniam quam quasi laborum alias quas sapiente exercitationem sit quibusdam voluptate.</p>
+            <p>En el taller de Carito, cada pieza nace de la pasión por transformar materiales nobles en objetos con
+                alma. Desde nuestros comienzos, nos dedicamos a crear artesanías únicas que transmiten calidez, armonía
+                y dedicación a cada rincón de tu hogar.</p>
+            <p>Cada una de nuestras creaciones es elaborada a mano, cuidando con mimo cada detalle y terminación para
+                ofrecerte productos duraderos, especiales y hechos con el corazón.</p>
+        </section>
+
+        <!-- Sección 2: Productos Destacados -->
+        <section class="seccion destacados">
+            <h2>Creaciones Destacadas</h2>
+            <p class="seccion-desc">Descubrí algunas de nuestras piezas más elegidas, diseñadas para llenar de vida tus
+                espacios:</p>
+
+            <div class="destacados-lista">
+                <div class="destacado-card">
+                    <img src="https://i.pinimg.com/1200x/54/27/f5/5427f5be85ea53473a412f7d49962808.jpg"
+                        alt="Producto">
+                    <div class="destacado-info">
+                        <h3>Producto</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                        <a href="productos.html" class="btn-card">Ver producto</a>
+                    </div>
+                </div>
+
+                <div class="destacado-card">
+                    <img src="https://i.pinimg.com/1200x/41/34/0f/41340fa37219a6ad2da4f58a97a9a2a9.jpg"
+                        alt="Producto">
+                    <div class="destacado-info">
+                        <h3>Producto</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                        <a href="productos.html" class="btn-card">Ver producto</a>
+                    </div>
+                </div>
+
+                <div class="destacado-card">
+                    <img src="https://i.pinimg.com/736x/65/90/96/65909651f9b1d9d612e1c4e51118eed6.jpg"
+                        alt="Producto">
+                    <div class="destacado-info">
+                        <h3>Producto</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                        <a href="productos.html" class="btn-card">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: ¿Por qué elegirnos? -->
+        <section class="seccion valores">
+            <h2>¿Por qué elegir Lopi?</h2>
+
+            <div class="valores-lista">
+                <div class="valor-item">
+                    <div class="valor-icono">✨</div>
+                    <h3>100% Hecho a Mano</h3>
+                    <p>Cada pieza se realiza individualmente con dedicación, cuidando cada detalle para lograr acabados
+                        impecables.</p>
+                </div>
+
+                <div class="valor-item">
+                    <div class="valor-icono">🌿</div>
+                    <h3>Materiales Nobles</h3>
+                    <p>Utilizamos materias primas naturales, sustentables y de primera calidad que respetan el medio
+                        ambiente.</p>
+                </div>
+
+                <div class="valor-item">
+                    <div class="valor-icono">🎁</div>
+                    <h3>Piezas Exclusivas</h3>
+                    <p>Al ser un trabajo completamente artesanal, cada objeto tiene su propia identidad y un toque
+                        irrepetible.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 4: Pedidos Personalizados -->
+        <section class="seccion personalizados">
+            <h2>Pedidos Personalizados</h2>
+            <div class="cta-box">
+                <h3>¿Tenés un evento o una idea especial?</h3>
+                <p>Realizamos trabajos por encargo para souvenirs, regalos empresariales, bodas o cumpleaños. Contanos
+                    tu proyecto y lo hacemos realidad en nuestro taller.</p>
+                <div class="cta-botones">
+                    <a href="https://wa.me/595983006047?text=Hola,%20quisiera%20consultar%20sobre%20un%20pedido%20personalizado"
+                        class="button-cat" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+                    <a href="productos.html" class="btn-card"
+                        style="align-self: center; padding: 12px 20px; font-size: 1rem;">Ver todo el catálogo</a>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Botón Flotante de WhatsApp -->
-    <a href="https://wa.me/595983006047?text=Hola,%20quisiera%20consultar%20sobre%20sus%20productos" class="btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contacto por WhatsApp">
+    <a href="https://wa.me/595983006047?text=Hola,%20quisiera%20consultar%20sobre%20sus%20productos"
+        class="btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contacto por WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
         </svg>
     </a>
     <footer class="footer">
@@ -72,4 +164,5 @@
     </footer>
 
 </body>
+
 </html>

@@ -1,0 +1,183 @@
+/* Contenedor Principal */
+main {
+  position: relative;
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.contacto-contenedor {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Encabezados y textos generales */
+.seccion-contacto {
+  margin-bottom: 45px;
+}
+
+.seccion-contacto h1,
+.seccion-contacto h2 {
+  font-size: 1.8rem;
+  color: #000;
+  border-bottom: 2px solid #ebc174;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.seccion-desc {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Sección 1: Perfil de la Artesana */
+.perfil-artesana {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.perfil-img-wrapper {
+  margin-bottom: 18px;
+}
+
+.perfil-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #CEB286;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transition: 300ms ease;
+  display: block;
+}
+
+.perfil-img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.perfil-rol {
+  font-style: italic;
+  color: #82776c;
+  font-size: 1.15rem;
+  margin-top: -5px;
+  margin-bottom: 14px;
+}
+
+.perfil-texto {
+  max-width: 780px;
+  color: #444;
+  text-align: justify;
+  line-height: 1.6;
+  margin: 0 auto 12px auto;
+}
+
+/* Sección 2: Canales de Contacto (Flexbox) */
+.canales-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.canal-card {
+  flex: 1 1 240px;
+  max-width: 275px;
+  background-color: #fdfdfd;
+  border: 1px solid #f0eae1;
+  border-radius: 8px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: 300ms ease;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.canal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  border-color: #CEB286;
+}
+
+.canal-icono {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.canal-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.canal-card p {
+  font-size: 0.92rem;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.canal-btn {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: #CEB286;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+.canal-card:hover .canal-btn {
+  background-color: #b89c6f;
+  transform: scale(1.05);
+}
+
+/* Sección 3: Mapa y Ubicación */
+.mapa-seccion {
+  text-align: left;
+}
+
+.mapa-wrapper {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid #f0eae1;
+  height: 380px;
+  width: 100%;
+}
+
+.mapa-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .contacto-contenedor {
+    width: 90%;
+  }
+
+  .canal-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .mapa-wrapper {
+    height: 280px;
+  }
+}
